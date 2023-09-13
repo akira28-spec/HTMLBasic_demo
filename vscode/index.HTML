@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >Crud Operations</title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="return onformSubmit()">
+                        <div>
+                            <label for="productCode">ProductCode</label>
+                            <input type="text" name="productcode" id="productcode">
+                        </div>  
+                        <div>
+                            <label for="product">Product Name</label>
+                            <input type="text" name="product" id="product">  
+                        </div>  
+                        <div>
+                            <label for="Qty" >Qty</label>
+                            <input type="number" name="Qty" id="qty">
+                        </div>
+                        <div>
+                            <label for="perPrice" >Price</label>
+                            <input type="number" name="perPrice" id="perPrice">
+                        </div>
+                        <div class="form_action--button">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+                    <td>
+                        <table class="list" id="storeList">
+                            <thead>
+                                <tr>
+                                    <th>ProductCode</th>
+                                    <th>Product name</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                
+                    </td>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="./script.js">
+        </script>
+    </body>
+</html>
